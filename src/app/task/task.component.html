@@ -1,0 +1,6 @@
+<div class="card" [ngClass]="{'done': task.done}">
+    <small>{{task.date | date:'medium'}}</small>
+    <p>{{task.name}}</p>
+    <button (click)="completeItem(task)" *ngIf="!task.done">Complete</button>
+    <button (click)="completeItem(task,'delete')" *ngIf="task.done">Delete</button>
+</div>

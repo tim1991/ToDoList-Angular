@@ -1,0 +1,12 @@
+.card{
+    background: #f0f0f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    color: #6c6c7f;
+
+    &.done{
+        color: #b4462d;
+        text-decoration: line-through;
+    }
+}
